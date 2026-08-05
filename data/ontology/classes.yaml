@@ -1,0 +1,55 @@
+- id: organization
+  label: Organization
+  description: AI developers and research institutions
+
+- id: frontier_model
+  label: Frontier Model
+  description: Frontier foundation models
+
+- id: governance_framework
+  label: Governance Framework
+  description: Governance and safety framework
+
+- id: evaluation
+  label: Evaluation
+  description: Formal evaluation procedure
+
+- id: benchmark
+  label: Benchmark
+  description: Evaluation benchmark
+
+- id: capability
+  label: Capability
+  description: Measured AI capability
+
+- id: risk_domain
+  label: Risk Domain
+  description: Risk category
+
+- id: safety_measure
+  label: Safety Measure
+  description: Risk mitigation mechanism
+
+- id: deployment_control
+  label: Deployment Control
+  description: Deployment gating mechanism
+
+- id: regulation
+  label: Regulation
+  description: Regulatory instrument
+
+- id: publication
+  label: Publication
+  description: Primary source document
+
+- id: incident
+  label: Incident
+  description: AI safety incident
+
+- id: standard
+  label: Standard
+  description: Technical standard
+
+- id: dataset
+  label: Dataset
+  description: Supporting dataset

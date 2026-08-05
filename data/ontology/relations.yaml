@@ -1,0 +1,83 @@
+- id: develops
+  label: develops
+  domain: organization
+  range: frontier_model
+  description: Organization develops a frontier model.
+
+- id: publishes
+  label: publishes
+  domain: organization
+  range: publication
+  description: Organization publishes a document.
+
+- id: authors
+  label: authors
+  domain: organization
+  range: governance_framework
+  description: Organization authors a governance framework.
+
+- id: describes
+  label: describes
+  domain: publication
+  range: frontier_model
+  description: Publication describes a frontier model.
+
+- id: evaluates
+  label: evaluates
+  domain: evaluation
+  range: frontier_model
+  description: Evaluation assesses a frontier model.
+
+- id: uses
+  label: uses
+  domain: evaluation
+  range: benchmark
+  description: Evaluation uses a benchmark.
+
+- id: measures
+  label: measures
+  domain: benchmark
+  range: capability
+  description: Benchmark measures a capability.
+
+- id: contributes_to
+  label: contributes to
+  domain: capability
+  range: risk_domain
+  description: Capability contributes to a risk domain.
+
+- id: mitigates
+  label: mitigates
+  domain: safety_measure
+  range: risk_domain
+  description: Safety measure mitigates a risk.
+
+- id: recommends
+  label: recommends
+  domain: governance_framework
+  range: safety_measure
+  description: Framework recommends a safety measure.
+
+- id: requires
+  label: requires
+  domain: governance_framework
+  range: deployment_control
+  description: Framework requires a deployment control.
+
+- id: implements
+  label: implements
+  domain: organization
+  range: governance_framework
+  description: Organization implements a governance framework.
+
+- id: aligns_with
+  label: aligns with
+  domain: governance_framework
+  range: regulation
+  description: Framework aligns with a regulation.
+
+- id: references
+  label: references
+  domain: publication
+  range: publication
+  description: Publication references another publication.
