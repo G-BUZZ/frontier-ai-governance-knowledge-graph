@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d2" for="edge" attr.name="relation" attr.type="string" />
+  <key id="d1" for="node" attr.name="type" attr.type="string" />
+  <key id="d0" for="node" attr.name="label" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="ORG001">
+      <data key="d0">Anthropic</data>
+      <data key="d1">Organization</data>
+    </node>
+    <node id="ORG002">
+      <data key="d0">OpenAI</data>
+      <data key="d1">Organization</data>
+    </node>
+    <node id="ORG003">
+      <data key="d0">Google DeepMind</data>
+      <data key="d1">Organization</data>
+    </node>
+    <node id="MOD001">
+      <data key="d0">Claude Opus 4</data>
+      <data key="d1">Frontier Model</data>
+    </node>
+    <node id="MOD002">
+      <data key="d0">GPT-5</data>
+      <data key="d1">Frontier Model</data>
+    </node>
+    <node id="MOD003">
+      <data key="d0">Gemini 2.5 Pro</data>
+      <data key="d1">Frontier Model</data>
+    </node>
+    <node id="FW001">
+      <data key="d0">Responsible Scaling Policy</data>
+      <data key="d1">Governance Framework</data>
+    </node>
+    <node id="FW002">
+      <data key="d0">Preparedness Framework</data>
+      <data key="d1">Governance Framework</data>
+    </node>
+    <node id="BEN001">
+      <data key="d0">SWE-Bench</data>
+      <data key="d1">Benchmark</data>
+    </node>
+    <node id="BEN002">
+      <data key="d0">CyberSecEval</data>
+      <data key="d1">Benchmark</data>
+    </node>
+    <node id="RISK001">
+      <data key="d0">Biological Risk</data>
+      <data key="d1">Risk Domain</data>
+    </node>
+    <node id="RISK002">
+      <data key="d0">Cyber Risk</data>
+      <data key="d1">Risk Domain</data>
+    </node>
+    <node id="REG001">
+      <data key="d0">EU AI Act</data>
+      <data key="d1">Regulation</data>
+    </node>
+    <node id="REG002">
+      <data key="d0">NIST AI RMF</data>
+      <data key="d1">Regulation</data>
+    </node>
+    <edge source="ORG001" target="MOD001">
+      <data key="d2">develops</data>
+    </edge>
+    <edge source="ORG001" target="FW001">
+      <data key="d2">publishes</data>
+    </edge>
+    <edge source="ORG002" target="MOD002">
+      <data key="d2">develops</data>
+    </edge>
+    <edge source="ORG002" target="FW002">
+      <data key="d2">publishes</data>
+    </edge>
+    <edge source="ORG003" target="MOD003">
+      <data key="d2">develops</data>
+    </edge>
+    <edge source="MOD002" target="BEN001">
+      <data key="d2">evaluated_by</data>
+    </edge>
+    <edge source="MOD003" target="BEN002">
+      <data key="d2">evaluated_by</data>
+    </edge>
+    <edge source="FW001" target="RISK001">
+      <data key="d2">mitigates</data>
+    </edge>
+    <edge source="FW001" target="RISK002">
+      <data key="d2">mitigates</data>
+    </edge>
+    <edge source="REG001" target="FW001">
+      <data key="d2">references</data>
+    </edge>
+    <edge source="REG002" target="FW002">
+      <data key="d2">references</data>
+    </edge>
+  </graph>
+</graphml>

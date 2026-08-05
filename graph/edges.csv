@@ -1,0 +1,16 @@
+source,target,relation
+ORG001,MOD001,develops
+ORG002,MOD002,develops
+ORG003,MOD003,develops
+
+ORG001,FW001,publishes
+ORG002,FW002,publishes
+
+FW001,RISK001,mitigates
+FW001,RISK002,mitigates
+
+MOD002,BEN001,evaluated_by
+MOD003,BEN002,evaluated_by
+
+REG001,FW001,references
+REG002,FW002,references
