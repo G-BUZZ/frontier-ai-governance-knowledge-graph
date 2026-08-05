@@ -1,0 +1,8 @@
+- id: responsible_scaling_policy
+  type: governance_framework
+  label: Responsible Scaling Policy
+  aliases:
+    - RSP
+  description: Frontier AI governance framework published by Anthropic.
+  attributes:
+    publisher: anthropic

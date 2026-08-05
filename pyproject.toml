@@ -1,12 +1,57 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "frontier-ai-governance-knowledge-graph"
-version = "0.1.0"
-description = "Knowledge graph for frontier AI governance, model evaluations, benchmarks and safety frameworks."
+name = "frontier-kg"
+version = "0.2.0"
+description = "Document-centric knowledge graph for frontier AI governance."
+readme = "README.md"
 requires-python = ">=3.13"
+license = {text = "MIT"}
+
+authors = [
+    {name = "Giulio Buzzetta"}
+]
+
+keywords = [
+    "knowledge-graph",
+    "ai-governance",
+    "frontier-ai",
+    "policy",
+    "risk",
+    "safety",
+    "osint"
+]
 
 dependencies = [
-    "networkx",
-    "pandas",
-    "matplotlib",
-    "pyyaml"
+    "networkx>=3.5",
+    "pandas>=2.3",
+    "pyyaml>=6.0",
 ]
+
+[project.optional-dependencies]
+
+dev = [
+    "pytest>=8",
+    "ruff>=0.12",
+    "mypy>=1.17",
+]
+
+[project.scripts]
+
+frontier-kg = "frontier_kg.pipeline.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+
+target-version = "py313"

@@ -2,18 +2,42 @@ document: anthropic_rsp
 
 assertions:
 
-  - subject: anthropic
+  - id: a001
+    subject: anthropic
     predicate: publishes
     object: anthropic_rsp
 
-  - subject: anthropic_rsp
+    provenance:
+      document: anthropic_rsp
+      section: "Overview"
+      confidence: 1.0
+
+  - id: a002
+    subject: anthropic_rsp
     predicate: describes
     object: responsible_scaling_policy
 
-  - subject: responsible_scaling_policy
+    provenance:
+      document: anthropic_rsp
+      section: "Policy"
+      confidence: 1.0
+
+  - id: a003
+    subject: responsible_scaling_policy
     predicate: recommends
     object: capability_threshold
 
-  - subject: responsible_scaling_policy
+    provenance:
+      document: anthropic_rsp
+      section: "Safety Measures"
+      confidence: 1.0
+
+  - id: a004
+    subject: responsible_scaling_policy
     predicate: requires
     object: deployment_gate
+
+    provenance:
+      document: anthropic_rsp
+      section: "Deployment"
+      confidence: 1.0

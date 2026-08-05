@@ -1,0 +1,15 @@
+nodes:
+
+  - id: SAFE001
+    label: Capability Threshold
+    type: Safety Measure
+
+  - id: SAFE002
+    label: External Evaluation
+    type: Safety Measure
+
+  - id: SAFE003
+    label: Staged Deployment
+    type: Safety Measure
+
+edges: []

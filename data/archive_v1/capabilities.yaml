@@ -1,0 +1,23 @@
+nodes:
+
+  - id: CAP001
+    label: Coding
+    type: Capability
+
+  - id: CAP002
+    label: Cybersecurity
+    type: Capability
+
+  - id: CAP003
+    label: Biological Reasoning
+    type: Capability
+
+  - id: CAP004
+    label: Scientific Reasoning
+    type: Capability
+
+  - id: CAP005
+    label: Autonomous Software Engineering
+    type: Capability
+
+edges: []

@@ -1,23 +1,27 @@
-nodes:
+- id: coding
+  type: capability
+  label: Coding
+  aliases: []
+  description: Software engineering capability.
+  attributes: {}
 
-  - id: CAP001
-    label: Coding
-    type: Capability
+- id: cybersecurity
+  type: capability
+  label: Cybersecurity
+  aliases: []
+  description: Cybersecurity capability.
+  attributes: {}
 
-  - id: CAP002
-    label: Cybersecurity
-    type: Capability
+- id: biological_reasoning
+  type: capability
+  label: Biological Reasoning
+  aliases: []
+  description: Biological reasoning capability.
+  attributes: {}
 
-  - id: CAP003
-    label: Biological Reasoning
-    type: Capability
-
-  - id: CAP004
-    label: Scientific Reasoning
-    type: Capability
-
-  - id: CAP005
-    label: Autonomous Software Engineering
-    type: Capability
-
-edges: []
+- id: scientific_reasoning
+  type: capability
+  label: Scientific Reasoning
+  aliases: []
+  description: Scientific reasoning capability.
+  attributes: {}

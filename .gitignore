@@ -1,10 +1,40 @@
-.venv/
+# Python
 __pycache__/
 *.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Test & coverage
 .pytest_cache/
+.coverage
+htmlcov/
+
+# Lint
 .ruff_cache/
+.mypy_cache/
 
-outputs/
+# IDE
+.vscode/
+.idea/
 
-*.log
+# OS
 .DS_Store
+Thumbs.db
+
+# Generated graph exports
+graph/*.csv
+graph/*.graphml
+graph/*.json
+graph/*.jsonld
+graph/*.rdf
+
+# Misc
+*.log
