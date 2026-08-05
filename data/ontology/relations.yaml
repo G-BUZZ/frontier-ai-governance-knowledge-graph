@@ -16,11 +16,11 @@
   range: governance_framework
   description: Organization authors a governance framework.
 
-- id: describes
-  label: describes
+- id: describes_framework
+  label: describes framework
   domain: publication
-  range: frontier_model
-  description: Publication describes a frontier model.
+  range: governance_framework
+  description: Publication describes a governance framework.
 
 - id: evaluates
   label: evaluates

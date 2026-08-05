@@ -14,7 +14,7 @@ assertions:
 
   - id: a002
     subject: anthropic_rsp
-    predicate: describes
+    predicate: describes_framework
     object: responsible_scaling_policy
 
     provenance:
