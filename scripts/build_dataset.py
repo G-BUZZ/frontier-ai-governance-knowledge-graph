@@ -1,4 +1,4 @@
-"""Build graph CSV files from YAML sources with validation."""
+"""Build graph CSV files from YAML sources with ontology validation."""
 
 from __future__ import annotations
 
@@ -15,15 +15,7 @@ GRAPH_DIR = PROJECT_ROOT / "graph"
 
 NODES_FILE = GRAPH_DIR / "nodes.csv"
 EDGES_FILE = GRAPH_DIR / "edges.csv"
-
-VALID_TYPES = {
-    "Organization",
-    "Frontier Model",
-    "Governance Framework",
-    "Benchmark",
-    "Risk Domain",
-    "Regulation",
-}
+NODE_TYPES_FILE = GRAPH_DIR / "node_types.csv"
 
 
 def load_yaml(path: Path) -> dict[str, Any]:
@@ -32,12 +24,20 @@ def load_yaml(path: Path) -> dict[str, Any]:
         return yaml.safe_load(f) or {}
 
 
+def load_valid_types() -> set[str]:
+    """Load valid node types from the ontology."""
+    node_types = pd.read_csv(NODE_TYPES_FILE)
+    return set(node_types["type"])
+
+
 def validate_nodes(nodes: list[dict[str, Any]]) -> None:
     """Validate node definitions."""
 
-    ids = set()
+    ids: set[str] = set()
+    valid_types = load_valid_types()
 
     for node in nodes:
+
         missing = {"id", "label", "type"} - node.keys()
         if missing:
             raise ValueError(
@@ -51,7 +51,7 @@ def validate_nodes(nodes: list[dict[str, Any]]) -> None:
 
         ids.add(node["id"])
 
-        if node["type"] not in VALID_TYPES:
+        if node["type"] not in valid_types:
             raise ValueError(
                 f"Invalid node type: {node['type']}"
             )
@@ -122,11 +122,16 @@ def main() -> None:
         .reset_index(drop=True)
     )
 
-    edges_df = (
-        pd.DataFrame(edges)
-        .sort_values(["relation", "source", "target"])
-        .reset_index(drop=True)
-    )
+    if edges:
+        edges_df = (
+            pd.DataFrame(edges)
+            .sort_values(["relation", "source", "target"])
+            .reset_index(drop=True)
+        )
+    else:
+        edges_df = pd.DataFrame(
+            columns=["source", "target", "relation"]
+        )
 
     GRAPH_DIR.mkdir(parents=True, exist_ok=True)
 

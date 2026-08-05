@@ -1,10 +1,15 @@
 id,label,type
-BEN001,SWE-Bench,Benchmark
-BEN003,Humanity's Last Exam,Benchmark
-MOD001,Claude Opus 4,Frontier Model
-FW001,Responsible Scaling Policy,Governance Framework
-FW004,Anthropic Constitutional AI,Governance Framework
-ORG001,Anthropic,Organization
-RISK001,Biological Risk,Risk Domain
-RISK002,Cyber Risk,Risk Domain
-RISK003,Autonomous AI R&D,Risk Domain
+CAP001,Coding,Capability
+CAP002,Cybersecurity,Capability
+CAP003,Biological Reasoning,Capability
+CAP004,Scientific Reasoning,Capability
+CAP005,Autonomous Software Engineering,Capability
+CTRL001,Deployment Gate,Deployment Control
+CTRL002,Human Review,Deployment Control
+CTRL003,Access Control,Deployment Control
+EVAL001,Anthropic Preparedness Evaluation,Evaluation
+EVAL002,OpenAI Preparedness Evaluation,Evaluation
+PUB001,Responsible Scaling Policy,Publication
+SAFE001,Capability Threshold,Safety Measure
+SAFE002,External Evaluation,Safety Measure
+SAFE003,Staged Deployment,Safety Measure

@@ -1,0 +1,45 @@
+source:
+  title: Responsible Scaling Policy
+  organization: Anthropic
+  version: "2026"
+  url: "https://www.anthropic.com/responsible-scaling-policy"
+
+nodes:
+
+  - id: ORG001
+    label: Anthropic
+    type: Organization
+
+  - id: PUB001
+    label: Responsible Scaling Policy
+    type: Publication
+
+  - id: FW001
+    label: Responsible Scaling Policy
+    type: Governance Framework
+
+  - id: SAFE001
+    label: Capability Threshold
+    type: Safety Measure
+
+  - id: CTRL001
+    label: Deployment Gate
+    type: Deployment Control
+
+edges:
+
+  - source: ORG001
+    target: PUB001
+    relation: publishes
+
+  - source: PUB001
+    target: FW001
+    relation: describes
+
+  - source: FW001
+    target: SAFE001
+    relation: recommends
+
+  - source: FW001
+    target: CTRL001
+    relation: requires

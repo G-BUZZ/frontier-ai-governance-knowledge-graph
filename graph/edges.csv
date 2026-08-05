@@ -1,8 +1,1 @@
 source,target,relation
-FW001,RISK001,addresses
-FW001,RISK002,addresses
-FW001,RISK003,addresses
-MOD001,BEN001,evaluated_by
-MOD001,BEN003,evaluated_by
-ORG001,FW001,published
-ORG001,FW004,published

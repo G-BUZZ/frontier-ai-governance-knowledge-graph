@@ -1,0 +1,15 @@
+nodes:
+
+  - id: CTRL001
+    label: Deployment Gate
+    type: Deployment Control
+
+  - id: CTRL002
+    label: Human Review
+    type: Deployment Control
+
+  - id: CTRL003
+    label: Access Control
+    type: Deployment Control
+
+edges: []
