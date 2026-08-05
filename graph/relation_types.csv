@@ -1,0 +1,13 @@
+id,relation,description
+1,develops,Creates or develops
+2,publishes,Publishes
+3,evaluates,Evaluates
+4,references,Cites or references
+5,adopts,Adopts
+6,recommends,Recommends
+7,requires,Requires
+8,supports,Supports
+9,mitigates,Mitigates
+10,regulates,Regulates
+11,reports,Reports
+12,supersedes,Supersedes
