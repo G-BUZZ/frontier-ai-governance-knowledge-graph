@@ -22,3 +22,38 @@ BEN003,Humanity's Last Exam,Benchmark
 REG001,EU AI Act,Regulation
 REG002,NIST AI RMF,Regulation
 REG003,UK AI Security Institute Guidance,Regulation
+ORG004,METR,Organization
+ORG005,UK AI Security Institute,Organization
+ORG006,Epoch AI,Organization
+ORG007,RAND,Organization
+ORG008,Apollo Research,Organization
+ORG009,OpenAI Safety,Organization
+
+FW004,Anthropic Constitutional AI,Governance Framework
+FW005,NIST AI RMF Generative AI Profile,Governance Framework
+FW006,OpenAI Preparedness Framework,Governance Framework
+FW007,Google Frontier Safety Framework,Governance Framework
+
+MOD004,Gemini 2.5 Flash,Frontier Model
+MOD005,DeepSeek R1,Frontier Model
+MOD006,Grok 4,Frontier Model
+MOD007,OpenAI o3,Frontier Model
+MOD008,GPT-4.1,Frontier Model
+
+RISK004,Deception,Risk Domain
+RISK005,Loss of Control,Risk Domain
+RISK006,CBRN Risk,Risk Domain
+RISK007,Persuasion,Risk Domain
+RISK008,Model Autonomy,Risk Domain
+
+BEN004,ARC-AGI,Benchmark
+BEN005,ARC-AGI-2,Benchmark
+BEN006,FrontierMath,Benchmark
+BEN007,GPQA,Benchmark
+BEN008,MMLU-Pro,Benchmark
+BEN009,MMLU,Benchmark
+BEN010,HELM,Benchmark
+
+REG004,ISO/IEC 42001,Regulation
+REG005,OECD AI Principles,Regulation
+REG006,Executive Order 14110,Regulation
