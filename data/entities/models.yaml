@@ -1,0 +1,23 @@
+- id: claude_opus_4
+  type: frontier_model
+  label: Claude Opus 4
+  aliases: []
+  description: Frontier language model developed by Anthropic.
+  attributes:
+    developer: anthropic
+
+- id: gpt_5
+  type: frontier_model
+  label: GPT-5
+  aliases: []
+  description: Frontier language model developed by OpenAI.
+  attributes:
+    developer: openai
+
+- id: gemini_2_5_pro
+  type: frontier_model
+  label: Gemini 2.5 Pro
+  aliases: []
+  description: Frontier language model developed by Google DeepMind.
+  attributes:
+    developer: google_deepmind

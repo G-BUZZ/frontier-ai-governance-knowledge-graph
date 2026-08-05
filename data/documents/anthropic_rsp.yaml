@@ -1,0 +1,26 @@
+id: anthropic_rsp
+
+title: Responsible Scaling Policy
+
+publisher: Anthropic
+
+url: https://www.anthropic.com/news/responsible-scaling-policy
+
+publication_date: "2025-05-22"
+
+document_type: policy
+
+version: "2025"
+
+language: en
+
+license: Proprietary
+
+description: |
+  Anthropic Responsible Scaling Policy.
+
+tags:
+  - governance
+  - frontier models
+  - deployment
+  - evaluations

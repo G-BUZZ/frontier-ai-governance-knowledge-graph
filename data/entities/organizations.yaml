@@ -1,0 +1,21 @@
+- id: anthropic
+  label: Anthropic
+  aliases: []
+  description: AI safety research company.
+  attributes:
+    country: United States
+
+- id: openai
+  label: OpenAI
+  aliases: []
+  description: AI research and deployment company.
+  attributes:
+    country: United States
+
+- id: google_deepmind
+  label: Google DeepMind
+  aliases:
+    - DeepMind
+  description: AI research laboratory.
+  attributes:
+    country: United Kingdom
