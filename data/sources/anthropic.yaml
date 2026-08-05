@@ -1,0 +1,65 @@
+nodes:
+  - id: ORG001
+    label: Anthropic
+    type: Organization
+
+  - id: FW001
+    label: Responsible Scaling Policy
+    type: Governance Framework
+
+  - id: FW004
+    label: Anthropic Constitutional AI
+    type: Governance Framework
+
+  - id: MOD001
+    label: Claude Opus 4
+    type: Frontier Model
+
+  - id: RISK001
+    label: Biological Risk
+    type: Risk Domain
+
+  - id: RISK002
+    label: Cyber Risk
+    type: Risk Domain
+
+  - id: RISK003
+    label: Autonomous AI R&D
+    type: Risk Domain
+
+  - id: BEN001
+    label: SWE-Bench
+    type: Benchmark
+
+  - id: BEN003
+    label: Humanity's Last Exam
+    type: Benchmark
+
+edges:
+  - source: ORG001
+    target: FW001
+    relation: published
+
+  - source: ORG001
+    target: FW004
+    relation: published
+
+  - source: FW001
+    target: RISK001
+    relation: addresses
+
+  - source: FW001
+    target: RISK002
+    relation: addresses
+
+  - source: FW001
+    target: RISK003
+    relation: addresses
+
+  - source: MOD001
+    target: BEN001
+    relation: evaluated_by
+
+  - source: MOD001
+    target: BEN003
+    relation: evaluated_by

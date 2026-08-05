@@ -1,0 +1,251 @@
+nodes:
+- id: ORG001
+  label: Anthropic
+  type: Organization
+- id: ORG002
+  label: OpenAI
+  type: Organization
+- id: ORG003
+  label: Google DeepMind
+  type: Organization
+- id: FW001
+  label: Responsible Scaling Policy
+  type: Governance Framework
+- id: FW002
+  label: Preparedness Framework
+  type: Governance Framework
+- id: FW003
+  label: Frontier Safety Framework
+  type: Governance Framework
+- id: MOD001
+  label: Claude Opus 4
+  type: Frontier Model
+- id: MOD002
+  label: GPT-5
+  type: Frontier Model
+- id: MOD003
+  label: Gemini 2.5 Pro
+  type: Frontier Model
+- id: RISK001
+  label: Biological Risk
+  type: Risk Domain
+- id: RISK002
+  label: Cyber Risk
+  type: Risk Domain
+- id: RISK003
+  label: Autonomous AI R&D
+  type: Risk Domain
+- id: BEN001
+  label: SWE-Bench
+  type: Benchmark
+- id: BEN002
+  label: CyberSecEval
+  type: Benchmark
+- id: BEN003
+  label: Humanity's Last Exam
+  type: Benchmark
+- id: REG001
+  label: EU AI Act
+  type: Regulation
+- id: REG002
+  label: NIST AI RMF
+  type: Regulation
+- id: REG003
+  label: UK AI Security Institute Guidance
+  type: Regulation
+- id: ORG004
+  label: METR
+  type: Organization
+- id: ORG005
+  label: UK AI Security Institute
+  type: Organization
+- id: ORG006
+  label: Epoch AI
+  type: Organization
+- id: ORG007
+  label: RAND
+  type: Organization
+- id: ORG008
+  label: Apollo Research
+  type: Organization
+- id: ORG009
+  label: OpenAI Safety
+  type: Organization
+- id: FW004
+  label: Anthropic Constitutional AI
+  type: Governance Framework
+- id: FW005
+  label: NIST AI RMF Generative AI Profile
+  type: Governance Framework
+- id: FW006
+  label: OpenAI Preparedness Framework
+  type: Governance Framework
+- id: FW007
+  label: Google Frontier Safety Framework
+  type: Governance Framework
+- id: MOD004
+  label: Gemini 2.5 Flash
+  type: Frontier Model
+- id: MOD005
+  label: DeepSeek R1
+  type: Frontier Model
+- id: MOD006
+  label: Grok 4
+  type: Frontier Model
+- id: MOD007
+  label: OpenAI o3
+  type: Frontier Model
+- id: MOD008
+  label: GPT-4.1
+  type: Frontier Model
+- id: RISK004
+  label: Deception
+  type: Risk Domain
+- id: RISK005
+  label: Loss of Control
+  type: Risk Domain
+- id: RISK006
+  label: CBRN Risk
+  type: Risk Domain
+- id: RISK007
+  label: Persuasion
+  type: Risk Domain
+- id: RISK008
+  label: Model Autonomy
+  type: Risk Domain
+- id: BEN004
+  label: ARC-AGI
+  type: Benchmark
+- id: BEN005
+  label: ARC-AGI-2
+  type: Benchmark
+- id: BEN006
+  label: FrontierMath
+  type: Benchmark
+- id: BEN007
+  label: GPQA
+  type: Benchmark
+- id: BEN008
+  label: MMLU-Pro
+  type: Benchmark
+- id: BEN009
+  label: MMLU
+  type: Benchmark
+- id: BEN010
+  label: HELM
+  type: Benchmark
+- id: REG004
+  label: ISO/IEC 42001
+  type: Regulation
+- id: REG005
+  label: OECD AI Principles
+  type: Regulation
+- id: REG006
+  label: Executive Order 14110
+  type: Regulation
+edges:
+- source: ORG001
+  target: MOD001
+  relation: develops
+- source: ORG002
+  target: MOD002
+  relation: develops
+- source: ORG003
+  target: MOD003
+  relation: develops
+- source: ORG001
+  target: FW001
+  relation: publishes
+- source: ORG002
+  target: FW002
+  relation: publishes
+- source: ORG003
+  target: FW003
+  relation: publishes
+- source: FW001
+  target: RISK001
+  relation: addresses
+- source: FW001
+  target: RISK002
+  relation: addresses
+- source: FW001
+  target: RISK003
+  relation: addresses
+- source: FW002
+  target: RISK001
+  relation: addresses
+- source: FW002
+  target: RISK002
+  relation: addresses
+- source: FW003
+  target: RISK002
+  relation: addresses
+- source: MOD001
+  target: BEN001
+  relation: evaluated_by
+- source: MOD002
+  target: BEN001
+  relation: evaluated_by
+- source: MOD003
+  target: BEN003
+  relation: evaluated_by
+- source: REG001
+  target: FW001
+  relation: references
+- source: REG002
+  target: FW002
+  relation: references
+- source: REG003
+  target: FW003
+  relation: references
+- source: ORG001
+  target: FW001
+  relation: published
+- source: ORG001
+  target: FW004
+  relation: published
+- source: ORG002
+  target: FW006
+  relation: published
+- source: ORG003
+  target: FW007
+  relation: published
+- source: FW001
+  target: RISK001
+  relation: addresses
+- source: FW001
+  target: RISK002
+  relation: addresses
+- source: FW001
+  target: RISK003
+  relation: addresses
+- source: FW006
+  target: RISK005
+  relation: addresses
+- source: FW007
+  target: RISK002
+  relation: addresses
+- source: MOD001
+  target: BEN001
+  relation: evaluated_by
+- source: MOD002
+  target: BEN004
+  relation: evaluated_by
+- source: MOD003
+  target: BEN007
+  relation: evaluated_by
+- source: MOD004
+  target: BEN008
+  relation: evaluated_by
+- source: MOD005
+  target: BEN006
+  relation: evaluated_by
+- source: REG002
+  target: FW005
+  relation: influences
+- source: REG001
+  target: FW006
+  relation: influences
+- source: REG005
+  target: FW007
+  relation: influences
