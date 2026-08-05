@@ -1,13 +1,12 @@
-id,relation,description
-1,develops,Creates or develops
-2,publishes,Publishes
-3,evaluates,Evaluates
-4,references,Cites or references
-5,adopts,Adopts
-6,recommends,Recommends
-7,requires,Requires
-8,supports,Supports
-9,mitigates,Mitigates
-10,regulates,Regulates
-11,reports,Reports
-12,supersedes,Supersedes
+relation,source_type,target_type
+develops,Organization,Frontier Model
+publishes,Organization,Publication
+describes,Publication,Frontier Model
+evaluates,Evaluation,Frontier Model
+uses,Evaluation,Benchmark
+measures,Benchmark,Capability
+contributes_to,Capability,Risk Domain
+mitigates,Safety Measure,Risk Domain
+recommends,Governance Framework,Safety Measure
+aligns_with,Governance Framework,Regulation
+references,Publication,Publication
