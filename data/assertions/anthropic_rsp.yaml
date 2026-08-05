@@ -1,0 +1,19 @@
+document: anthropic_rsp
+
+assertions:
+
+  - subject: anthropic
+    predicate: publishes
+    object: anthropic_rsp
+
+  - subject: anthropic_rsp
+    predicate: describes
+    object: responsible_scaling_policy
+
+  - subject: responsible_scaling_policy
+    predicate: recommends
+    object: capability_threshold
+
+  - subject: responsible_scaling_policy
+    predicate: requires
+    object: deployment_gate

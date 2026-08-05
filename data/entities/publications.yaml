@@ -1,0 +1,8 @@
+- id: anthropic_rsp
+  type: publication
+  label: Responsible Scaling Policy
+  aliases:
+    - RSP
+  description: Anthropic Responsible Scaling Policy.
+  attributes:
+    publisher: anthropic

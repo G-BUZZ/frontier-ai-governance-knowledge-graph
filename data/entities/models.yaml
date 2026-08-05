@@ -17,7 +17,8 @@
 - id: gemini_2_5_pro
   type: frontier_model
   label: Gemini 2.5 Pro
-  aliases: []
+  aliases:
+    - Gemini Pro
   description: Frontier language model developed by Google DeepMind.
   attributes:
     developer: google_deepmind

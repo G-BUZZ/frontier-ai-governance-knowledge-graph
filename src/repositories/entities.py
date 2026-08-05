@@ -1,7 +1,10 @@
 """
 Entity repository.
 
-Loads every YAML file inside data/entities.
+Loads canonical entities from data/entities.
+
+Legacy V1 files are ignored during the migration to the
+document-centric architecture.
 """
 
 from __future__ import annotations
@@ -11,7 +14,7 @@ from typing import Dict
 
 import yaml
 
-from .model import Entity
+from ..model import Entity
 
 
 class EntityRepository:
@@ -19,9 +22,7 @@ class EntityRepository:
     def __init__(self, entities_dir: Path, ontology):
 
         self.entities_dir = Path(entities_dir)
-
         self.ontology = ontology
-
         self.entities: Dict[str, Entity] = {}
 
     def load(self):
@@ -29,6 +30,11 @@ class EntityRepository:
         for file in sorted(self.entities_dir.glob("*.yaml")):
 
             data = yaml.safe_load(file.read_text()) or []
+
+            # Ignore legacy V1 files.
+            if not isinstance(data, list):
+                print(f"Skipping legacy entity file: {file.name}")
+                continue
 
             for item in data:
 
@@ -47,11 +53,11 @@ class EntityRepository:
 
                 self.entities[entity.id] = entity
 
-    def get(self, entity_id: str) -> Entity:
+    def get(self, entity_id: str):
 
         return self.entities[entity_id]
 
-    def has(self, entity_id: str) -> bool:
+    def has(self, entity_id: str):
 
         return entity_id in self.entities
 
