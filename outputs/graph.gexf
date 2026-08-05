@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-08-05">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="1" title="relation" type="string" />
+      <attribute id="2" title="networkx_key" type="long" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="type" type="string" />
+    </attributes>
+    <nodes>
+      <node id="ORG001" label="Anthropic">
+        <attvalues>
+          <attvalue for="0" value="Organization" />
+        </attvalues>
+      </node>
+      <node id="ORG002" label="OpenAI">
+        <attvalues>
+          <attvalue for="0" value="Organization" />
+        </attvalues>
+      </node>
+      <node id="ORG003" label="Google DeepMind">
+        <attvalues>
+          <attvalue for="0" value="Organization" />
+        </attvalues>
+      </node>
+      <node id="FW001" label="Responsible Scaling Policy">
+        <attvalues>
+          <attvalue for="0" value="Governance Framework" />
+        </attvalues>
+      </node>
+      <node id="FW002" label="Preparedness Framework">
+        <attvalues>
+          <attvalue for="0" value="Governance Framework" />
+        </attvalues>
+      </node>
+      <node id="FW003" label="Frontier Safety Framework">
+        <attvalues>
+          <attvalue for="0" value="Governance Framework" />
+        </attvalues>
+      </node>
+      <node id="MOD001" label="Claude Opus 4">
+        <attvalues>
+          <attvalue for="0" value="Frontier Model" />
+        </attvalues>
+      </node>
+      <node id="MOD002" label="GPT-5">
+        <attvalues>
+          <attvalue for="0" value="Frontier Model" />
+        </attvalues>
+      </node>
+      <node id="MOD003" label="Gemini 2.5 Pro">
+        <attvalues>
+          <attvalue for="0" value="Frontier Model" />
+        </attvalues>
+      </node>
+      <node id="RISK001" label="Biological Risk">
+        <attvalues>
+          <attvalue for="0" value="Risk Domain" />
+        </attvalues>
+      </node>
+      <node id="RISK002" label="Cyber Risk">
+        <attvalues>
+          <attvalue for="0" value="Risk Domain" />
+        </attvalues>
+      </node>
+      <node id="RISK003" label="Autonomous AI R&amp;D">
+        <attvalues>
+          <attvalue for="0" value="Risk Domain" />
+        </attvalues>
+      </node>
+      <node id="BEN001" label="SWE-Bench">
+        <attvalues>
+          <attvalue for="0" value="Benchmark" />
+        </attvalues>
+      </node>
+      <node id="BEN002" label="CyberSecEval">
+        <attvalues>
+          <attvalue for="0" value="Benchmark" />
+        </attvalues>
+      </node>
+      <node id="BEN003" label="Humanity's Last Exam">
+        <attvalues>
+          <attvalue for="0" value="Benchmark" />
+        </attvalues>
+      </node>
+      <node id="REG001" label="EU AI Act">
+        <attvalues>
+          <attvalue for="0" value="Regulation" />
+        </attvalues>
+      </node>
+      <node id="REG002" label="NIST AI RMF">
+        <attvalues>
+          <attvalue for="0" value="Regulation" />
+        </attvalues>
+      </node>
+      <node id="REG003" label="UK AI Security Institute Guidance">
+        <attvalues>
+          <attvalue for="0" value="Regulation" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="ORG001" target="MOD001" id="0">
+        <attvalues>
+          <attvalue for="1" value="develops" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="ORG001" target="FW001" id="1">
+        <attvalues>
+          <attvalue for="1" value="publishes" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="ORG002" target="MOD002" id="2">
+        <attvalues>
+          <attvalue for="1" value="develops" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="ORG002" target="FW002" id="3">
+        <attvalues>
+          <attvalue for="1" value="publishes" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="ORG003" target="MOD003" id="4">
+        <attvalues>
+          <attvalue for="1" value="develops" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="ORG003" target="FW003" id="5">
+        <attvalues>
+          <attvalue for="1" value="publishes" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="FW001" target="RISK001" id="6">
+        <attvalues>
+          <attvalue for="1" value="addresses" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="FW001" target="RISK002" id="7">
+        <attvalues>
+          <attvalue for="1" value="addresses" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="FW001" target="RISK003" id="8">
+        <attvalues>
+          <attvalue for="1" value="addresses" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="FW002" target="RISK001" id="9">
+        <attvalues>
+          <attvalue for="1" value="addresses" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="FW002" target="RISK002" id="10">
+        <attvalues>
+          <attvalue for="1" value="addresses" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="FW003" target="RISK002" id="11">
+        <attvalues>
+          <attvalue for="1" value="addresses" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="MOD001" target="BEN001" id="12">
+        <attvalues>
+          <attvalue for="1" value="evaluated_by" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="MOD002" target="BEN001" id="13">
+        <attvalues>
+          <attvalue for="1" value="evaluated_by" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="MOD003" target="BEN003" id="14">
+        <attvalues>
+          <attvalue for="1" value="evaluated_by" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="REG001" target="FW001" id="15">
+        <attvalues>
+          <attvalue for="1" value="references" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="REG002" target="FW002" id="16">
+        <attvalues>
+          <attvalue for="1" value="references" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="REG003" target="FW003" id="17">
+        <attvalues>
+          <attvalue for="1" value="references" />
+          <attvalue for="2" value="0" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

@@ -3,18 +3,22 @@ ORG001,Anthropic,Organization
 ORG002,OpenAI,Organization
 ORG003,Google DeepMind,Organization
 
+FW001,Responsible Scaling Policy,Governance Framework
+FW002,Preparedness Framework,Governance Framework
+FW003,Frontier Safety Framework,Governance Framework
+
 MOD001,Claude Opus 4,Frontier Model
 MOD002,GPT-5,Frontier Model
 MOD003,Gemini 2.5 Pro,Frontier Model
 
-FW001,Responsible Scaling Policy,Governance Framework
-FW002,Preparedness Framework,Governance Framework
+RISK001,Biological Risk,Risk Domain
+RISK002,Cyber Risk,Risk Domain
+RISK003,Autonomous AI R&D,Risk Domain
 
 BEN001,SWE-Bench,Benchmark
 BEN002,CyberSecEval,Benchmark
-
-RISK001,Biological Risk,Risk Domain
-RISK002,Cyber Risk,Risk Domain
+BEN003,Humanity's Last Exam,Benchmark
 
 REG001,EU AI Act,Regulation
 REG002,NIST AI RMF,Regulation
+REG003,UK AI Security Institute Guidance,Regulation

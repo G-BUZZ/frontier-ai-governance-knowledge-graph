@@ -1,0 +1,20 @@
+id,label,type
+ORG001,Anthropic,Organization
+ORG002,OpenAI,Organization
+ORG003,Google DeepMind,Organization
+
+MOD001,Claude Opus 4,Frontier Model
+MOD002,GPT-5,Frontier Model
+MOD003,Gemini 2.5 Pro,Frontier Model
+
+FW001,Responsible Scaling Policy,Governance Framework
+FW002,Preparedness Framework,Governance Framework
+
+BEN001,SWE-Bench,Benchmark
+BEN002,CyberSecEval,Benchmark
+
+RISK001,Biological Risk,Risk Domain
+RISK002,Cyber Risk,Risk Domain
+
+REG001,EU AI Act,Regulation
+REG002,NIST AI RMF,Regulation

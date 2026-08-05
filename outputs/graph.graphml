@@ -16,6 +16,18 @@
       <data key="d0">Google DeepMind</data>
       <data key="d1">Organization</data>
     </node>
+    <node id="FW001">
+      <data key="d0">Responsible Scaling Policy</data>
+      <data key="d1">Governance Framework</data>
+    </node>
+    <node id="FW002">
+      <data key="d0">Preparedness Framework</data>
+      <data key="d1">Governance Framework</data>
+    </node>
+    <node id="FW003">
+      <data key="d0">Frontier Safety Framework</data>
+      <data key="d1">Governance Framework</data>
+    </node>
     <node id="MOD001">
       <data key="d0">Claude Opus 4</data>
       <data key="d1">Frontier Model</data>
@@ -28,13 +40,17 @@
       <data key="d0">Gemini 2.5 Pro</data>
       <data key="d1">Frontier Model</data>
     </node>
-    <node id="FW001">
-      <data key="d0">Responsible Scaling Policy</data>
-      <data key="d1">Governance Framework</data>
+    <node id="RISK001">
+      <data key="d0">Biological Risk</data>
+      <data key="d1">Risk Domain</data>
     </node>
-    <node id="FW002">
-      <data key="d0">Preparedness Framework</data>
-      <data key="d1">Governance Framework</data>
+    <node id="RISK002">
+      <data key="d0">Cyber Risk</data>
+      <data key="d1">Risk Domain</data>
+    </node>
+    <node id="RISK003">
+      <data key="d0">Autonomous AI R&amp;D</data>
+      <data key="d1">Risk Domain</data>
     </node>
     <node id="BEN001">
       <data key="d0">SWE-Bench</data>
@@ -44,13 +60,9 @@
       <data key="d0">CyberSecEval</data>
       <data key="d1">Benchmark</data>
     </node>
-    <node id="RISK001">
-      <data key="d0">Biological Risk</data>
-      <data key="d1">Risk Domain</data>
-    </node>
-    <node id="RISK002">
-      <data key="d0">Cyber Risk</data>
-      <data key="d1">Risk Domain</data>
+    <node id="BEN003">
+      <data key="d0">Humanity's Last Exam</data>
+      <data key="d1">Benchmark</data>
     </node>
     <node id="REG001">
       <data key="d0">EU AI Act</data>
@@ -60,37 +72,62 @@
       <data key="d0">NIST AI RMF</data>
       <data key="d1">Regulation</data>
     </node>
-    <edge source="ORG001" target="MOD001">
+    <node id="REG003">
+      <data key="d0">UK AI Security Institute Guidance</data>
+      <data key="d1">Regulation</data>
+    </node>
+    <edge source="ORG001" target="MOD001" id="0">
       <data key="d2">develops</data>
     </edge>
-    <edge source="ORG001" target="FW001">
+    <edge source="ORG001" target="FW001" id="0">
       <data key="d2">publishes</data>
     </edge>
-    <edge source="ORG002" target="MOD002">
+    <edge source="ORG002" target="MOD002" id="0">
       <data key="d2">develops</data>
     </edge>
-    <edge source="ORG002" target="FW002">
+    <edge source="ORG002" target="FW002" id="0">
       <data key="d2">publishes</data>
     </edge>
-    <edge source="ORG003" target="MOD003">
+    <edge source="ORG003" target="MOD003" id="0">
       <data key="d2">develops</data>
     </edge>
-    <edge source="MOD002" target="BEN001">
+    <edge source="ORG003" target="FW003" id="0">
+      <data key="d2">publishes</data>
+    </edge>
+    <edge source="FW001" target="RISK001" id="0">
+      <data key="d2">addresses</data>
+    </edge>
+    <edge source="FW001" target="RISK002" id="0">
+      <data key="d2">addresses</data>
+    </edge>
+    <edge source="FW001" target="RISK003" id="0">
+      <data key="d2">addresses</data>
+    </edge>
+    <edge source="FW002" target="RISK001" id="0">
+      <data key="d2">addresses</data>
+    </edge>
+    <edge source="FW002" target="RISK002" id="0">
+      <data key="d2">addresses</data>
+    </edge>
+    <edge source="FW003" target="RISK002" id="0">
+      <data key="d2">addresses</data>
+    </edge>
+    <edge source="MOD001" target="BEN001" id="0">
       <data key="d2">evaluated_by</data>
     </edge>
-    <edge source="MOD003" target="BEN002">
+    <edge source="MOD002" target="BEN001" id="0">
       <data key="d2">evaluated_by</data>
     </edge>
-    <edge source="FW001" target="RISK001">
-      <data key="d2">mitigates</data>
+    <edge source="MOD003" target="BEN003" id="0">
+      <data key="d2">evaluated_by</data>
     </edge>
-    <edge source="FW001" target="RISK002">
-      <data key="d2">mitigates</data>
-    </edge>
-    <edge source="REG001" target="FW001">
+    <edge source="REG001" target="FW001" id="0">
       <data key="d2">references</data>
     </edge>
-    <edge source="REG002" target="FW002">
+    <edge source="REG002" target="FW002" id="0">
+      <data key="d2">references</data>
+    </edge>
+    <edge source="REG003" target="FW003" id="0">
       <data key="d2">references</data>
     </edge>
   </graph>
